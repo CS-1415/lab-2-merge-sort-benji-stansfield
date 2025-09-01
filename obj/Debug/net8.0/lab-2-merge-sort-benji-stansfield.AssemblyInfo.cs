@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lab-2-merge-sort-benji-stansfield")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfb7b2dc02072e05738e5cd5d47d8ad343a7e207")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fb9982d56b2cd63a2f4fcf0fe299286c10d607a")]
 [assembly: System.Reflection.AssemblyProductAttribute("lab-2-merge-sort-benji-stansfield")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lab-2-merge-sort-benji-stansfield")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -12,10 +12,10 @@ Debug.Assert(Enumerable.SequenceEqual(
 
 /*Recursive Merging Tests*/
 Debug.Assert(Enumerable.SequenceEqual(
-    SortViaMergesort(new int[]{6, 1, -5, 3, 5, 3, 7}),
+    SortViaMergeSort(new int[]{6, 1, -5, 3, 5, 3, 7}),
     new int[]{-5, 1, 3, 3, 5, 6, 7}));
 Debug.Assert(Enumerable.SequenceEqual(
-    SortViaMergesort(new int[]{1, 10, -5, 2, 5, 2, 5, 8}),
+    SortViaMergeSort(new int[]{1, 10, -5, 2, 5, 2, 5, 8}),
     new int[]{-5, 1, 2, 2, 5, 5, 8, 10}));
 
 Console.WriteLine("All tests passed!");
@@ -47,5 +47,12 @@ int[] CombineSortedArrays(int[] a, int[] b)
 /*Recursive merge*/
 int[] SortViaMergeSort(int[] values)
 {
-    
+    int middle = values.Length / 2;
+    int[] firstHalf = values[0..middle];
+    int[] secondHalf = values[middle..values.Length];
+
+    if (values.Length < 2)
+        return values;
+    else
+        return CombineSortedArrays(SortViaMergeSort(firstHalf), SortViaMergeSort(secondHalf));
 }
